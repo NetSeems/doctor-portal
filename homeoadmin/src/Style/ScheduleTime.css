@@ -1,0 +1,86 @@
+.form-data-add {
+  width: 50%;
+  margin-top: 30px;
+  margin: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+.schedule-main-container{
+  width: 90%;
+  margin: auto;
+}
+.slot-btn {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.slot-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.selected {
+  background-color: var(--primary);
+  color: white;
+}
+#time-slots{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: auto;
+  flex-direction: row;
+}
+.disabled-slot {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+.disabled-slot:hover {
+  background-color: #ddd;
+}
+.schedule-main-container>form>button{
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid var(--secondary);
+}
+.form-data-add > div {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-data-add > div > input {
+  width: 91%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid green;
+}
+.form-data-add > div > select {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid green;
+}
+
+.tab-buttons{
+  width: 100%;
+  display: flex;
+}
+.tab-buttons>button{
+  cursor: pointer;
+  border: none;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}

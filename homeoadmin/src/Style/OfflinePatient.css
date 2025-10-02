@@ -1,0 +1,31 @@
+.form-data-add {
+  margin-top: 30px;
+}
+.patient-container {
+  width: 90%;
+  margin: auto;
+}
+.form-data-add > div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-data-add > div > input {
+  width: 92%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid green;
+}
+
+.form-data-btn1 {
+  padding: 10px;
+  width: 100%;
+  margin: 10px 0px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}

@@ -1,0 +1,426 @@
+.appointment-main-container {
+  width: 90%;
+  margin: auto;
+}
+.appointment-content {
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.view-usera-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.edit-div-form {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+.appointment-option-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.appointment-option-1 > select {
+  width: 30%;
+  padding: 10px;
+}
+.edit-div-form > div > input,
+.edit-div-form > div > select,
+.edit-div-form > button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.div-text-area {
+  display: flex;
+  flex-direction: column;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  backdrop-filter: blur(8px); /* Blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup {
+  background: white;
+  padding: 20px;
+  width: 430px;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup Heading */
+.popup h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  margin-top: 0px;
+}
+
+/* Payment Selection Buttons */
+.popup button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Active (Selected) Payment Option */
+.popup button.active {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Default Button Style */
+.popup button:not(.active) {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Button Hover Effect */
+.popup button:hover {
+  background-color: #ddd;
+}
+
+/* Input Fields */
+.popup input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Image Preview */
+.popup img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.add-morebtn {
+  padding: 10px;
+  height: 50px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.add-morebtn:hover {
+  background-color: gray;
+  color: white;
+}
+/* Submit Button */
+.popup .view-orderbtn-1 {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.popup .view-orderbtn-1:hover {
+  background-color: var(--primary);
+}
+.show-all-remedies-div {
+  width: 100%;
+  height: 100px;
+  overflow-y: scroll;
+}
+.remedies-show-11 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.remedies-show-11 > div {
+  display: flex;
+  flex-direction: column;
+}
+.remedies-show-11 > div > div {
+  display: flex;
+}
+.appo-details-1 > div {
+  margin-bottom: 10px;
+}
+.edit-div-form > button {
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.edit-div-form > button:hover {
+  background: var(--secondary);
+  color: var(--primary);
+}
+.image-uploader {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.thumbnail-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-thumbnails {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+  border-color: #aaa;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-image-wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  max-height: 90vh;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.popup-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  background: transparent;
+  font-size: 80px;
+  color: var(--primary);
+  border: none;
+  cursor: pointer;
+}
+.custom-dropdown-container {
+  width: 97%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0px 5px;
+  height: 45px;
+}
+.custom-dropdown-container-drop {
+  width: 4%;
+  height: 150px;
+  overflow-y: scroll;
+  background-color: white;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  position: absolute;
+  padding: 5px 20px;
+  z-index: 1000;
+}
+.custom-dropdown-container-drop1 {
+  width: 26.5%;
+  height: 260px;
+  overflow-y: scroll;
+  background-color: white;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  position: absolute;
+  padding: 5px 20px;
+  z-index: 1000;
+}
+.custom-potency-width {
+  width: 129%;
+  display: flex;
+  column-gap: 20px;
+}
+.delete-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  text-align: center;
+}
+
+.delete-popup p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.delete-popup button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-popup button:first-of-type {
+  background-color: red;
+  color: white;
+}
+
+.delete-popup button:last-of-type {
+  background-color: gray;
+  color: white;
+}
+
+.delete-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+.custom-dropdown-container-drop > p {
+  padding: 5px 5px;
+  margin: 0;
+  font-size: 14px;
+}
+.custom-dropdown-container-drop > p:hover {
+  background-color: var(--primary);
+  border-radius: 5px;
+  color: #fff;
+}
+.custom-dropdown-container-drop1 > p {
+  padding: 5px 5px;
+  margin: 0;
+  font-size: 14px;
+}
+.custom-dropdown-container-drop1 > p:hover {
+  background-color: var(--primary);
+  border-radius: 5px;
+  color: #fff;
+}
+.all-dropdown-ingrid {
+  display: grid;
+  grid-template-columns: repeat(2, 415px);
+  gap: 20px;
+  margin: 25px 0px;
+}
+.all-dropdown-ingrid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.all-dropdown-ingrid1 > div > select {
+  width: 100%;
+}
+.all-dropdown-ingrid1 > div > select,
+.all-dropdown-ingrid1 > div > textarea {
+  padding: 14px 5px;
+  margin: 10px 0px;
+}
+.all-dropdown-ingrid1 > div > textarea {
+  width: 95%;
+  height: 14px;
+}
+.searchInputEdit {
+  width: 202px;
+  padding: 10px;
+}
+.searchInputEdit2 {
+  width: 50px;
+}
+.searchInputEdit1 {
+  width: 100px;
+}
+@media (max-width: 768px) {
+  .appointment-main-container {
+    width: 95%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
