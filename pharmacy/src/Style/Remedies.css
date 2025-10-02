@@ -1,0 +1,86 @@
+.form-data-add {
+  margin-top: 30px;
+}
+
+.form-data-add > div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-data-add > div > input,select {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid green;
+}
+
+.form-data-update {
+  margin-top: 30px;
+}
+
+.form-data-update > div {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.form-data-update > div > input {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid green;
+}
+.first-table-tr-content1 > td {
+  border: 1px solid #9e9e90;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.first-table-1 {
+  width: 100%;
+}
+.form-data-btn {
+  width: 60%;
+  padding: 10px 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #fff;
+  border: 1px solid var(--primary);
+  background-color: var(--primary);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.form-data-btn:hover {
+  background-color: var(--secondary);
+  color: black;
+}
+
+.form-data-update {
+  width: 50%;
+  margin: auto;
+}
+.form-data-update > form > div > div {
+  margin-top: 10px;
+}
+.form-data-update > form > div > div > input {
+  width: 65%;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid green;
+}
+
+@media (max-width: 768px) {
+  .form-data-add > div > input {
+    width: 80%;
+  }
+
+  .form-data-btn {
+    width: 85%;
+  }
+
+  .form-data-update {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

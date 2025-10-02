@@ -1,0 +1,60 @@
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(242, 247, 243, 0.2);
+  z-index: 1001;
+}
+
+/* Form box styling */
+.form-box {
+  background: rgba(255, 255, 255, 0.3); /* Slightly transparent */
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+}
+
+/* Heading */
+h2 {
+  color: white;
+}
+
+/* Input fields & select dropdown */
+.form-box>select,
+.form-box>input,
+.form-box>button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-box>select,
+.form-box>input {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* Submit button */
+.form-box>button {
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+
+.form-box>button:hover {
+  background: #0056b3;
+}

@@ -1,0 +1,48 @@
+.sider-content {
+    width: 100%;
+  }
+  
+  .sider-content >a> div {
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 15px;
+  }
+  
+  .sider-content > div:hover {
+    background-color: #3564ff;
+    color: #ffff;
+  }
+  
+  .sider-content-icon {
+    font-size: 35px;
+  }
+  .sider-content-content {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    height: 90px;
+    width: 100%;
+    border-radius: 50%;
+  }
+  .logo-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .logo-text {
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+  }
+  
+  

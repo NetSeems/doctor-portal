@@ -1,0 +1,107 @@
+.dashboard-container1 {
+    padding: 0px 24px;
+    background-color: #f3f4f6;
+    min-height: 100vh;
+  }
+  
+  .dashboard-title2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .data-cards3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  .data-card4 {
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .data-label5 {
+    color: #6b7280;
+  }
+  
+  .data-value6 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .data-percentage7 {
+    font-size: 14px;
+  }
+  
+  
+  .bar-chart9 {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-title10,
+  .chart-title12 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .recent-orders13 {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+  }
+  
+  .orders-title14 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: black;
+  }
+  
+  .orders-table15 {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-header16 {
+    background: #e5e7eb;
+    font-weight: bold;
+  }
+  
+  .header-item17,
+  .table-row18 td {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .order-item19 {
+    font-weight: bold;
+  }
+  
+  .status-icon20 {
+    color: green;
+  }
+  
+  .status-text21 {
+    color: green;
+    font-weight: bold;
+  }
+  .action-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+  }
+  .action-btn>svg{
+    font-size: 30px;
+    cursor: pointer;
+  }

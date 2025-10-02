@@ -1,0 +1,211 @@
+.appointment-main-container {
+  width: 90%;
+  margin: auto;
+}
+.view-Ordera-all {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.view-orderbtn-1 {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  font-size: 16px;
+}
+.view-orderbtn-1:hover {
+  background-color: var(--secondary);
+  color: black;
+}
+
+.added-div-reme-1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 15px;
+}
+.added-div-reme-1 > input {
+  border: 1px solid gray;
+  border-radius: 10px;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Popup Background Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent dark overlay */
+  backdrop-filter: blur(8px); /* Blur effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  max-width: 90%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Popup Heading */
+.popup h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #333;
+  margin-top: 0px;
+}
+
+/* Payment Selection Buttons */
+.popup button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Active (Selected) Payment Option */
+.popup button.active {
+  background-color: rgb(147, 244, 147);
+  color: black;
+}
+
+/* Default Button Style */
+.popup button:not(.active) {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+/* Button Hover Effect */
+
+
+/* Input Fields */
+.popup input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Image Preview */
+.popup img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* Submit Button */
+.popup .view-orderbtn-1 {
+  background-color: var(--primary);
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+.custom-dropdown-container {
+  height: 57px;
+  border: 1px solid gray;
+  width: 91%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0px 10px;
+  border-radius: 10px;
+}
+.custom-dropdown-container-drop {
+  width: 16%;
+  height: 150px;
+  overflow-y: scroll;
+  background-color: white;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  position: absolute;
+  padding: 5px 20px;
+  z-index: 1000;
+}
+.custom-dropdown-container-drop > p {
+  padding: 7px 10px;
+  margin: 0;
+}
+.custom-dropdown-container-drop > p:hover {
+  background-color: var(--primary);
+  border-radius: 5px;
+  color: #fff;
+}
+.popup .view-orderbtn-1:hover {
+  background-color: var(--primary);
+  color: #fff;
+}
+.show-all-remedies-div {
+  width: 100%;
+  height: 100px;
+  overflow-y: scroll;
+}
+.remedies-show-11 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.show-all-remedies-btn {
+  padding: 7px 14px;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+.remedies-show-11 > div {
+  display: flex;
+  flex-direction: column;
+}
+.remedies-show-11 > div > div {
+  display: flex;
+}
+.show-added-remedies {
+  max-height: 100px;
+  overflow-y: scroll;
+}
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
